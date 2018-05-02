@@ -1,0 +1,198 @@
+/*banner图*/
+#banner img{
+	width:960px;
+}
+/*网页主体：列表和商家公告*/
+#product-list{
+	display:flex;
+	justify-content:space-between;
+	margin-top:10px;
+}
+#pList{
+	width:740px;
+}
+#notice-board{
+	width:210px;
+}
+#title{
+	font-size:16px;
+	height:40px;
+	line-height:40px;
+	background:linear-gradient(to bottom,#f0f0f0,#e0e0e0);
+	padding-left:16px;
+	color:#808080;
+}
+/*产品列表布局*/
+#show-list{
+	background:#fff;
+	display:flex;
+	padding:10px;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+#show-list>li{
+	border:1px solid #f0f0f0;
+	width:230px;
+	padding-bottom:20px;
+	box-sizing:border-box;
+}
+#show-list>li img{
+	width:100%;
+	transition:all .5s linear;
+}
+#show-list>li img:hover{
+	transform:scale(1.1);
+}
+/*价格文字样式*/
+#show-list li p.price{
+    color:#0AA1ED;
+    font-weight:bold;
+	font-size:16px;
+	margin-bottom:10px;
+}
+#show-list li a.intro{
+	font:12px "微软雅黑";
+	color:#808080;
+	line-height:18px;
+}
+#show-list li a.intro:hover{
+	color:#808080;
+}
+#show-list>li>div{
+	margin-top:15px;
+}
+/*设置+，-样式*/
+#show-list>li>div>span{
+	display:inline-block;
+	width:24px;
+	height:24px;
+	font-size:32px;
+	color:#fff;
+	background:linear-gradient(to bottom,#efefef,#e0e0e0);
+	text-align:center;
+	line-height:24px;
+}
+#show-list>li>div>span:hover{
+	background:linear-gradient(top,#f0f0f0,#e0e0e0);
+}
+/*设置中间input输入框*/
+#show-list>li>div>input{
+	width:25px;
+	height:24px;
+	border:none;
+	outline:none;
+	text-align:center;
+	position:relative;
+	top:-5px;
+}
+/*设置加入购物车按钮*/
+#show-list a.addCart{
+	display:inline-block;
+	width:100px;
+	height:32px;
+	text-align:center;
+	line-height:32px;
+	color:#fff;
+	font-size:16px;
+	background:linear-gradient(to bottom,#27b1f6,#0aa1ed);
+	border-radius:3px;
+	position:relative;
+	top:-5px;
+	margin-left:10px;
+}
+#show-list a.addCart:hover{
+	background:linear-gradient(to bottom,#25a7e9,#0998df);
+}
+/*分页样式*/
+#pages{
+	height:41px;
+	background:linear-gradient(to top,#f5f4f5,#e6e6e5);
+	color:#ccc;
+	text-align:right;
+	line-height:41px;
+	padding:0 20px;
+}
+#pages a{
+	padding:5px 10px;
+	border:1px solid #ddd;
+	border-radius:4px;
+	color:#0aa1ed;
+}
+#pages a.current{
+	border-color:#0aa1ed;
+	background:#0aa1ed;
+	color:#fff;
+}
+#pages .previous{
+	border:1px solid #bfbfbf;
+	border-radius:4px;
+	background:#f2f2f2;
+	color:#bfbfbf;
+}
+#pages .next{
+	border:1px solid #bfbfbf;
+	border-radius:4px;
+	background:#f2f2f2;
+}
+/*商家公告样式*/
+/*商家公告标题样式*/
+#notice-board p.title{
+	height:38px;
+	line-height:38px;
+	background:linear-gradient(to top,#f0f0f0,#e0e0e0);
+	font-size:16px;
+	color:#333;
+}
+#notice-board p.title img{
+	margin:0 15px;
+}
+/*商家公告 内容样式*/
+#notice-board div.content{
+	background:#fff;
+	padding:20px;
+}
+#notice-board div.content p{
+	margin-bottom:8px;
+	font:12px "微软雅黑";
+}
+/*购物车*/
+#cart p.title{
+	height:28px;
+    font:14px;
+    line-height:28px;
+    padding-left:5px;
+    color: #b8b8b8;
+    background:linear-gradient(to top,#f0f0f0, #e0e0e0);
+	font-size:14px;
+}
+#cart p.title a{
+	margin-right:10px;
+	color:#b8b8b8;
+}
+#cart p.title a:hover{
+	color:#b8b8b8;
+}
+#cart div.cart-content{
+	width:145px;
+	height:46px;
+	line-height:46px;
+	background:#808080;
+	display:inline-block;
+	font-size:16px;
+	color:#fff;
+}
+#cart div.cart-content img{
+	margin-left:15px;
+}
+#cart div.cart-result{
+	width:65px;
+	height:46px;
+	line-height:46px;
+	background:linear-gradient(to top,#27b1f6,#0aa1ed);
+	display:block;
+	font-size:16px;
+	text-align:center;
+}
+#cart div.cart-result a{
+	color:#fff;
+}

@@ -1,0 +1,272 @@
+    /*banner样式*/
+	#banner{
+		width:960px;
+		height:380px;
+		margin:0 auto;
+		overflow:hidden;
+		/*相对定位，为了子元素的绝对定位*/
+		position:relative;
+	}
+	#banner img{
+		width:960px;
+	}
+	#banner ul.banner-img li{
+		float:left;
+	}
+	/*设置左右的按钮*/
+	#banner a.ck-side{
+		width:35px;
+		height:70px;
+		border-radius:3px;
+		background:#000;
+		position:absolute;
+		top:155px;
+	}
+	#banner a.ck-left{
+		left:5px;
+		background:#ddd url(../index/arrow-left.png) no-repeat center center;
+	}
+	#banner a.ck-right{
+		right:5px;
+		background:#ddd url(../index/arrow-right.png) no-repeat center center;
+	}
+	#banner ul.ind{
+		position:absolute;
+		bottom:30px;
+		left:450px;
+	}
+	#banner ul.ind li{
+		width:10px;
+		height:10px;
+		border-radius:50%;
+		background:#fff;
+		float:left;
+		margin-right:5px;
+	}
+	#banner ul.ind li.active{
+		background:#0aa1ed;
+	}
+	/*3.1上：楼层标题*/
+	#floor div.floor-top{
+		margin:20px 0;
+		font-size:24px;
+		font-weight:bold;
+		border-bottom:2px solid #d9d9d9;
+	}
+	#floor div.floor-top img{
+		margin-right:10px;
+	}
+	/*3.1下：六幅图的布局*/
+	#content{
+		width:960px;
+		margin:0 auto;
+		display:flex;
+		justify-content:space-between;
+		flex-wrap:wrap;
+	}
+	#d1{
+		width:610px;
+		height:370px;
+		background:#eee;
+        /*为了子元素实现绝对定位*/
+		position:relative;
+	}
+	#d2{
+		width:340px;
+		height:370px;
+		background:#eee;
+		/*为了子元素实现绝对定位*/
+		position:relative;
+	}
+	#d3{
+		width:360px;
+		height:230px;
+		margin:10px 0;
+		background:#eee;
+		/*为了子元素实现绝对定位*/
+		position:relative;
+	}
+	.d4{
+		width:190px;
+		height:230px;
+		margin:10px 0;
+		background:#eee;
+		/*为了子元素实现绝对定位*/
+		position:relative;
+	}
+	/*第一个div中具体内容修饰*/
+	#content #d1 p.name{
+		font-size:32px;
+		margin:0;
+		color:#333;
+	}
+	#content #d1 p.details{
+		font-size:12px;
+		margin-bottom:24px;
+		color:#666;
+	}
+	#content #d1 p.price{
+		font-size:24px;
+		margin-bottom:12px;
+		color:#0aa1ed;
+	}
+	#content #d1 a.view{
+		display:block;
+		width:130px;
+		height:40px;
+		line-height:40px;
+		text-align:center;
+		border-radius:2px;
+		background:linear-gradient(to bottom,#27b1f6,#0aa1eb);
+		color:#fff;
+		font-size:16px;
+		text-decoration:none;
+	}
+	#content #d1 div.desc{
+		position:absolute;
+		width:245px;
+		height:243px;
+		top:55px;
+		left:65px;
+	}
+	#d1 img{
+		position:absolute;
+		top:56px;
+		right:30px;
+	}
+	#d1 img:hover{
+		transform:scale(1.1);
+	}
+	/*第二个div中具体内容修饰*/
+	#content #d2 p.name{
+		font-size:32px;
+		margin:0;
+		color:#333;
+	}
+	#content #d2 p.details{
+		font-size:12px;
+		margin-bottom:24px;
+		color:#666;
+	}
+	#content #d2 p.price{
+		font-size:24px;
+		margin-bottom:12px;
+		color:#0aa1ed;
+	}
+	#content #d2 a.view{
+		display:block;
+		width:130px;
+		height:40px;
+		line-height:40px;
+		text-align:center;
+		border-radius:2px;
+		background:linear-gradient(to bottom,#27b1f6,#0aa1eb);
+		color:#fff;
+		font-size:16px;
+		text-decoration:none;
+	}
+	#content #d2 div.desc{
+		position:absolute;
+		width:245px;
+		height:243px;
+		top:55px;
+		left:20px;
+	}
+	#d2 img{
+		position:absolute;
+		top:110px;
+		right:20px;
+	}
+	#d2 img:hover{
+		transform:scale(1.1);
+	}
+	/*第三个div中具体内容修饰*/
+	#content #d3 p.name{
+		width:150px;
+		font-size:25px;
+		margin:0;
+		color:#333;
+	}
+	#content #d3 p.details{
+		font-size:12px;
+		margin-bottom:24px;
+		color:#666;
+	}
+	#content #d3 p.price{
+		font-size:24px;
+		margin-bottom:12px;
+		color:#0aa1ed;
+	}
+	#content #d3 a.view{
+		display:block;
+		width:130px;
+		height:40px;
+		line-height:40px;
+		text-align:center;
+		border-radius:2px;
+		background:linear-gradient(to bottom,#27b1f6,#0aa1eb);
+		color:#fff;
+		font-size:16px;
+		text-decoration:none;
+	}
+	#content #d3 div.desc{
+		position:absolute;
+		width:245px;
+		height:243px;
+		top:35px;
+		left:20px;
+	}
+	#d3 img{
+		position:absolute;
+		top:35px;
+		right:5px;
+	}
+	#d3 img:hover{
+		transform:scale(1.1);
+	}
+	/*第四个div中具体内容修饰*/
+	#content .d4 p.name{
+		font-size:18px;
+		margin:0;
+		color:#333;
+		position:absolute;
+		top:140px;
+		text-align:center;
+	}
+	#content .d4 p.price{
+		position:absolute;
+		font-size:24px;
+		color:#0aa1ed;
+		top:160px;
+		left:40px;
+	}
+	#content .d4 a.view{
+		display:block;
+		width:130px;
+		height:40px;
+		line-height:40px;
+		text-align:center;
+		border-radius:2px;
+		background:linear-gradient(to bottom,#27b1f6,#0aa1eb);
+		color:#fff;
+		font-size:16px;
+		text-decoration:none;
+		position:absolute;
+		top:185px;
+		left:35px;
+	}
+/*	#content .d4 div.desc{*/
+/*		position:absolute;*/
+/*		width:245px;*/
+/*		height:243px;*/
+/*		top:140px;*/
+/*		left:10px;*/
+/*	}*/
+	.d4 img{
+		position:absolute;
+		top:0px;
+		right:5px;
+	}
+	.d4 img:hover{
+		transform:scale(1.1);
+	}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>登录</title>
+  <script src="common.js"></script>
+ </head>
+ <body>
+	<form action="02-login.php" method="post">
+		<p>登录名称：<input type="text" id="uname" name="uname" onblur="check_uname()">
+			<span id="show-name"></span></p>
+		<p>登录密码：<input type="password" id="upwd" name="upwd">
+			<span id="show-upwd"></span></p>
+		<p>登录按钮：<input type="submit" value="登录"></p>
+	</form>
+	<script>
+		function check_uname(){
+			var uname=$("uname").value;
+			if(uname==""){
+				$("show-name").innerHTML="用户名不能为空";
+			}else{
+				$("show-name").innerHTML="用户名通过";
+			}
+		}
+	</script>
+ </body>
+</html>

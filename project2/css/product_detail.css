@@ -1,0 +1,190 @@
+/*1.所在路径*/
+#pro{
+	color: #333;
+    font-weight: bold;
+}
+/*2.详细信息：产品图，商品介绍，承诺*/
+#pro-detail{
+	display:flex;
+	justify-content:space-between;
+	margin-top:15px;
+}
+#pro-words{
+	margin-left:10px;
+}
+/*2.1.1 商品介绍*/
+#pro-words>h2{
+	font-size:18px;
+	font-family:"微软雅黑";
+	color:#333;
+	margin-bottom:15px;
+}
+/*2.1.2 打折信息*/
+#pro-words>h3>a{
+	color:#333;
+	font-size:16px;
+}
+#pro-words>h3>a:hover{
+	color:#333;
+}
+/*2.1.3 商品售价，承诺*/
+#pro-words div.price{
+	margin:15px 0;
+	background:linear-gradient(to bottom,#f0f0f0,#e0e0e0);
+	padding:10px;
+	font-size:16px;
+}
+#pro-words div.price span{
+	font-size:34px;
+    color:#0aa1ed;
+    font-family:Arial;
+}
+/*2.1.4 客服*/
+#pro-words>p>b{
+	font-size:16px;
+}
+/*2.1.5 规格*/
+#pro-words>div.desc{
+	margin-top:20px;
+}
+#pro-words>div.desc>b{
+	font-size:16px;
+}
+#pro-words>div.desc>div{
+	display:inline;
+}
+#pro-words>div.desc>div>a{
+	border:1px solid #666;
+	display:inline-block;
+	padding:7px 9px;
+	margin-bottom:5px;
+}
+#pro-words>div.desc>div>a:nth-child(1){
+	border:2px solid #0aa1ed;
+}
+#pro-words>div.desc>div>a:nth-child(3){
+	margin-left:55px;
+}
+/*2.1.6 商品数量*/
+#pro-words>div.count{
+	margin:25px 0;
+}
+#pro-words>div.count>b{
+	font-size:16px;
+}
+#pro-words>div.count>a{
+	display:inline-block;
+	width:36px;
+	height:36px;
+	background:#ddd;
+	text-align:center;
+	line-height:36px;
+}
+#pro-words>div.count>input{
+	width:36px;
+	height:30px;
+	text-align:center;
+	line-height:36px;
+	outline:none;
+}
+/*2.1.7 立即购买，加入购物车*/
+#pro-words div.cart a{
+	display:inline-block;
+	border:1px solid #ddd;
+	width:165px;
+	height:55px;
+	text-align:center;
+	line-height:55px;
+	font-size:20px;
+}
+#pro-words div.cart a.buy{
+	background:linear-gradient(to bottom,#f0f0f0,#e0e0e0);
+	color:#0aa1ed;
+	margin-right:10px;
+}
+#pro-words div.cart a.buy:hover{
+	background:linear-gradient(to bottom,#e0e0e0,#b3b3b3);
+}
+#pro-words div.cart img{
+	width:100%;
+	height:100%;
+}
+/*3.产品图的五张小图*/
+#sm-pro-detail{
+	margin-top:15px;
+}
+#sm-pro-detail img{
+	width:84px;
+}
+/*4.为你推荐，大家都在看*/
+div.main>p{
+	margin-top:25px;
+	font-size:24px;
+    font-weight:bold;
+    color:#333;
+}
+div.main>p>span{
+	font-size:14px;
+    color:#fff;
+    background:#333;
+    padding:2px 5px;
+}
+/*5.四副滚图*/
+#recommend{
+	margin-top:15px;
+	border:1px solid #333;
+	display:flex;
+	justify-content:space-between;
+	padding:10px;
+}
+/*6.商品详情*/
+#detail{
+	width:800px;
+}
+/*6.左.1 商品详情横条*/
+#detail ul.hengtiao{
+	height:46px;
+    line-height:46px;
+    background:linear-gradient(to bottom,#f0f0f0,#e0e0e0);
+	display:flex;
+	padding:0 15px;
+}
+#detail ul.hengtiao a{
+	font-size:16px;
+	font-family:"微软雅黑";
+	font-weight:bold;
+}
+#detail ul.hengtiao li:nth-child(1){
+	border-bottom:2px solid #0aa1ed;
+	margin-right:30px;
+}
+#detail ul.hengtiao li:nth-child(1) a{
+	color:#333;
+}
+/*6.左.2 规格参数*/
+#detail div p.desc{
+	font-size:16px;
+    color:#808080;
+    font-weight:bold;
+    margin-top:30px;
+}
+#detail div ul.desc{
+	display:flex;
+    flex-wrap:wrap;
+    margin-top:5px;
+	justify-content:space-between;
+}
+#detail div ul.desc li{
+	margin:10px 0;
+	width:33.3%;
+}
+/*6.左.3 商品介绍*/
+#detail div.intro{
+	margin-top:15px;
+}
+#detail div.intro p{
+	font-size:16px;
+    color:#808080;
+    font-weight:bold;
+	margin-bottom:10px;
+}

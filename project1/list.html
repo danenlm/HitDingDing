@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script src="common.js"></script>
+  <title>查询</title>
+ </head>
+ <body>
+<!--   <input type="button" value="查询" onclick="check_list()"> -->
+  <table border="1px">
+	<thead>
+	<tr>
+		<th>登录名称</th>
+		<th>电子邮箱</th>
+		<th>联系方式</th>
+		<th>用户姓名</th>
+		<th>用户姓别</th>
+		<th>操作</th>
+	</tr>
+	</thead>
+	<tbody id="tbody"></tbody>
+  </table>
+  
+  <script>
+	function check_list(){
+		var xhr=creatXhr();
+		xhr.onreadystatechange=function(){
+			if(xhr.readyState==4&&xhr.status==200){
+				var res=xhr.responseText;
+				var res1=JSON.parse(res);
+				var html="";
+				for(var i=0;i<res1.length;i++){
+					html+="<tr>";
+						html+="<td>"+res1[i].uname+"</td>";
+						html+="<td>"+res1[i].email+"</td>";
+						html+="<td>"+res1[i].phone+"</td>";
+						html+="<td>"+res1[i].user_name+"</td>";
+						//将取回的性别的数字以文字的方式表现出来
+						var gender="";
+						if(res1[i].gender==1){
+							gender="男";
+						}else if(res1[i].gender==0){
+							gender="女";
+						}else{
+							gender="保密";
+						}
+						html+="<td>"+gender+"</td>";
+						html+="<td>";
+							html+="<a href='javascript:del("+res1[i].uid+")'>删除 </a>";
+							html+="<a href='04-sel-update.php?uid="+res1[i].uid+"'>/ 修改</a>";
+						html+="</td>";
+					html+="</tr>";
+				}
+				$("tbody").innerHTML=html;
+			}
+		}
+		xhr.open("get","list.php",true);
+		xhr.send(null);
+	}
+	check_list();
+
+	function del(uid){
+		//alert(uid);
+			var xhr=creatXhr();
+			xhr.onreadystatechange=function(){
+				if(xhr.readyState==4&&xhr.status==200){
+					var res=xhr.responseText;
+					if(res=="1"){
+						alert("删除成功");
+						check_list();
+					}else{
+						alert("删除失败");
+					}
+				}
+			}
+			var url="03-delete.php?uid="+uid;
+			xhr.open("get",url,true);
+			xhr.send(null);	
+		}	
+  </script>
+ </body>
+</html>

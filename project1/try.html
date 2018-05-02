@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <script>
+/*var x = "10";
+function f1( x ){
+x = x+2;
+return x;
+}
+console.log(x);
+x = f1(x);
+console.log(x);*/
+/*function f1( ){
+x = 10;
+++x;
+}
+f1();
+console.log(x);*/
+var i = 0;
+var sum = 0;
+do{
+i++;
+if( i%2 === 0){
+continue;
+}
+if( i%5 === 0){
+break;
+}
+sum += i;
+}while( i<10 );
+console.log( 'sum=' + sum );
+  </script>
+ </body>
+</html>
